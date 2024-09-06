@@ -1,0 +1,20 @@
+h2{
+    color: orange;
+    font-family: Trebuchet MS;
+    text-align: center;
+}
+
+.kotak{
+    background-color: orange;
+    width: 100px;
+    color: #fff;
+    padding: 50px;
+    margin: 10px;
+}
+
+#kotak{
+    background-color: blue;
+    width: 400px;
+    color: #fff;
+    padding: 50px;
+}
