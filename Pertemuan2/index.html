@@ -3,93 +3,50 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Position CSS</title>
-    <link rel="stylesheet" type="text/css" href="stylePosition.css">
+    <title>Menggunakan Float</title>
+    <link rel="stylesheet" type="text/css" href="styleFloat.css">
 </head>
 
 <body>
-    <h2>Position: static</h2>
-
-    <p>Potition static digunakan untuk mengatur elemen menjadi statis secara default.
-        Elemen akan mengikuti posisi normal secara default,
-        elemen tidak dipengaruhi oleh properti seperti top, bottom, left, dan right.:
-    </p>
-
-    <div class="static">
-        Elemen ini diatur menggunakan posisi: static;
+    <h2>Float Kiri</h2><br>
+    <div class="float1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ducimus nobis a officia laudantium.
+            Fugit hic tenetur laborum recusandae vel? Dolores doloremque ut ipsa error ipsum fugiat, ipsam repellat
+            fugit.
+            In accusamus obcaecati corporis ex cupiditate mollitia soluta harum veniam vel aut eum hic omnis
+            reprehenderit quas, doloribus, vitae tempore minima tenetur eligendi molestias modi eaque consequatur?
+            Praesentium, tempore pariatur.
+            <img src="../img/lambang-polinema1.jpg" class="gambar">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro debitis in expedita officia voluptatem amet
+            impedit, quasi repellat vel reprehenderit totam doloribus aspernatur nesciunt illum veniam, blanditiis
+            pariatur quam quo.
+            Ducimus, suscipit. Provident aut nam architecto iure, tempore consequuntur adipisci praesentium voluptate
+            non molestias suscipit corporis dolorem sequi nemo, quas odio quisquam minima consectetur laborum distinctio
+            error numquam soluta! Cumque!
+            Assumenda dolorum fuga voluptates animi deleniti ratione itaque qui perspiciatis voluptatum! Autem
+            doloremque repellendus odio dolores adipisci, vero maiores explicabo quas dolor mollitia, illo nihil
+            perspiciatis officiis provident voluptas cumque.
+            Necessitatibus ad possimus atque omnis nihil voluptates, quos nulla perferendis illum, optio impedit fuga
+            culpa commodi beatae dolor quasi reiciendis, eveniet vero hic ullam sint. Sint dolorem fugiat placeat
+            consectetur.
+            Voluptas aspernatur architecto veniam impedit eos voluptatem, iste cumque nobis illo aut ipsum, ut a
+            deleniti amet dicta? Sed expedita quam eum asperiores vitae tempore quo quas corporis eligendi ab!
+            Natus dicta rem aliquid, repellendus blanditiis labore nam aperiam at accusamus. Aliquam commodi, ad, velit
+            facere blanditiis vitae qui molestiae impedit non rem a quae magni esse in aspernatur repellendus!
+            Suscipit corporis ut, accusantium illo dolorum esse dicta error libero velit nulla deleniti cupiditate
+            culpa! Natus aliquam nihil recusandae quod ipsam similique voluptatum exercitationem numquam eaque dolor?
+            Distinctio, corrupti magni.
+            Vitae quos, enim neque magnam repellendus a perferendis quasi deserunt delectus at expedita hic? Odio earum
+            perferendis repellat accusantium exercitationem qui neque magni illo, odit nesciunt. Soluta dolores omnis
+            suscipit.
+            Cupiditate exercitationem quisquam corrupti velit tempore eius, amet ducimus voluptatum! Laudantium mollitia
+            earum consequatur quos at, cumque omnis ut facere nobis fugiat atque amet ratione impedit quia eligendi nemo
+            quaerat.
+            Commodi voluptate totam quos atque officia inventore facere! Dicta, nihil. Distinctio vitae aspernatur dicta
+            atque, sapiente, provident cupiditate rem animi nihil eos saepe voluptatum eaque, labore iure ducimus! Esse,
+            repellat.
+        </p>
     </div>
-    <br><br><br><br>
-    <h2>Position: relative</h2>
-
-    <p>
-        Sebuah elemen HTML yang menggunakan potition relative akan terletak pada posisi normal.
-        Mengatur properti atas, kanan, bawah, dan kiri elemen yang diposisikan dengan "relatif"
-        akan membuatnya jauh dari posisi normal.
-        Konten lain tidak akan disesuaikan agar sesuai dengan celah yang ditinggalkan oleh elemen tersebut.:
-    </p>
-
-    <div class="relative">
-        Elemen ini diatur menggunakan posisi : relative;
-    </div>
-    <br><br><br>
-    <h2>Position: fixed;</h2>
-
-    <p>
-        Sebuah elemen HTML yang disetting dengan position fixed akan memiliki sifat tetap,
-        tanpa ada perubahan bahkan jika halaman website discroll.
-        Berlaku pengaturan left, bottom, top, dan right pada potition fixed:
-    </p>
-
-    <div class="fixed">
-        Elemen ini diatur menggunakan posisi : fixed;
-    </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <h2>Position: absolute;</h2>
-
-    <p>
-        Elemen HTML yang menggunakan potition absolute akan diposisikan relatif dengan elemen lain yang mendahuluinya
-        yang terdekat,
-        bukan relatif terhadap layar secara normal.:
-    </p>
-
-    <div class="relative1">
-        Elemen ini diatur menggunakan posisi : relative;
-        <div class="absolute">
-            Elemen ini diatur menggunakan posisi : absolute;
-        </div>
-    </div>
-
-    <br><br><br><br><br><br>
-
-    <h2>Position: sticky;</h2>
-
-    <p>Cobalah untuk <b>scroll</b> untuk mengetahui bagaimana posisi sticky bekerja.
-    <p>Catatan: IE/Edge 15 dan versi yang lebih lama tidak mendukung sticky.</p>
-
-    <div class="sticky">
-        Elemen ini diatur menggunakan posisi : sticky;
-    </div>
-
-    <div>
-        <p>Dalam contoh ini, elemen sticky menempel pada posisi paling atas halaman (top:0), ketika mencapai posisi
-            scrollnya</p>
-        <p>Cobalah untuk melakukan scroll</p>
-        <p>Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-            necessitatibus? Doloremque laborum quod voluptate esse, mollitia architecto obcaecati? Ad impedit dolores
-            nihil repudiandae inventore provident ducimus est dicta, reprehenderit accusamus. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sed odit cumque numquam odio asperiores dignissimos molestias accusantium
-            inventore iusto autem, optio ratione aperiam! Magnam enim, esse natus earum fuga exercitationem.</p>
-        <p>Cobalah untuk melakukan scroll.. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-            necessitatibus? Doloremque laborum quod voluptate esse, mollitia architecto obcaecati? Ad impedit dolores
-            nihil repudiandae inventore provident ducimus est dicta, reprehenderit accusamus. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Laboriosam sed commodi fugiat quas dolorum obcaecati adipisci temporibus
-            tempore voluptate nobis illo eligendi itaque, totam consequuntur reprehenderit saepe repudiandae assumenda
-            officia.</p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-
 </body>
 
 </html>
