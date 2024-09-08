@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    background-color: #ddd;
+    background: url(../img/background.webp);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.65;
     padding-bottom: 1000px;
@@ -12,8 +12,25 @@ body {
 
 .container-satu {
     background-color: #fff;
-    width: 800px;
+    width: 1000px;
     margin: 50px auto;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+}
+
+.sidebar-satu{
+    order: 1;
+    width: 400px;
+}
+
+.sidebar-dua{
+    order: 3;
+    width: 500px;
+}
+
+.kolom-utama {
+    order: 2;
+    width: 1000px;
+    margin-right: 50px;
 }
