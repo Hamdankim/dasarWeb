@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data Diri</title>
+    <style>
+        body {
+            color: red;
+            font-size: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: calc(100% - 300px);
+            padding: 5px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            margin-left: 150px;
+            width: calc(100% - 300px);
+            padding: 5px;
+
+        }
+    </style>
+    <script>
+        function validateForm() {
+            const nama = document.querySelector('input[name="nama"]').value;
+            const alamat = document.querySelector('input[name="alamat"]').value;
+            const tanggalLahir = document.querySelector('input[name="tanggal_lahir"]').value;
+            const jenisKelamin = document.querySelectorAll('input[name="jk"]:checked');
+            const hobby = document.querySelectorAll('input[name="hobby"]:checked');
+            const pekerjaan = document.querySelectorAll('input[name="pekerjaan"]:checked');
+            const checkbox = document.querySelector('input[name="check"]');
+
+
+            if (nama === "") {
+                alert("Nama tidak boleh kosong!");
+                return false;
+            }
+
+            if (alamat === "") {
+                alert("Alamat tidak boleh kosong!");
+                return false;
+            }
+
+
+            if (tanggalLahir === "") {
+                alert("Tanggal lahir tidak boleh kosong!");
+                return false;
+            }
+
+            if (jenisKelamin.length === 0) {
+                alert("Pilih salah satu jenis kelamin!");
+                return false;
+            } else if (jenisKelamin.length > 1) {
+                alert("Pilih salah satu jenis kelamin!");
+                return false;
+            }
+
+            if (hobby.length === 0) {
+                alert("Pilih minimal satu hobby!");
+                return false;
+            }
+
+            if (pekerjaan.length === 0) {
+                alert("Pilih salah satu pekerjaan!");
+                return false;
+            } else if (pekerjaan.length > 1) {
+                alert("Pilih salah satu pekerjaan!");
+                return false;
+            }
+
+            if (!checkbox.checked) {
+                alert("Harap centang checkbox sebelum mengirimkan data!");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <img src="../img/tugas.avif" width="100%" height="150px">
+    <hr>
+    <div class="container">
+        <form onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="nama"><b>Nama</b></label>
+                <input type="text" id="nama" name="nama">
+            </div>
+
+            <div class="form-group">
+                <label for="alamat"><b>Alamat</b></label>
+                <input type="text" id="alamat" name="alamat" style="height:100px">
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal_lahir"><b>Tanggal Lahir</b></label>
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+            </div>
+
+            <div class="form-group">
+                <label><b>Jenis Kelamin</b></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="jk" value="laki-laki"> Laki-laki</label>
+                    <label><input type="checkbox" name="jk" value="perempuan"> Wanita</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><b>Hobby</b></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="hobby" value="berenang"> Berenang</label>
+                    <label><input type="checkbox" name="hobby" value="berlari"> Berlari</label>
+                    <label><input type="checkbox" name="hobby" value="lain-lain"> Lain-lain</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label><b>Pekerjaan</b></label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="pekerjaan" value="swasta"> Swasta</label>
+                    <label><input type="checkbox" name="pekerjaan" value="pns"> PNS</label>
+                    <label><input type="checkbox" name="pekerjaan" value="lain-lain"> Lain-lain</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <label><input type="checkbox" name="check"> Check Jika anda akan mengirimkan data ini</label>
+            </div>
+            <br><br>
+            <input type="submit" value="Cek!">
+        </form>
+    </div>
+</body>
+4
+</html>
