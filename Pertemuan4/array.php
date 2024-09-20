@@ -72,7 +72,7 @@ echo "<br>Nilai rata-rata: " . $nilaiRata;
 
 echo "<br>Nilai mahasiswa yang lulus: <br>";
 foreach ($nilai as $data) {
-    if ($data[1] >= 70) {
+    if ($data[1] > $nilaiRata) {
         echo $data[0] . "<br>";
     }
 }
