@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-</head>
+<html>
 
 <body>
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -13,7 +8,7 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $name = $_POST['fname'];
+        $name = $_REQUEST['fname'];
         if (empty($name)) {
             echo "Name is empty";
         } else {
