@@ -1,0 +1,38 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    border: black 1px solid;
+    text-align: center;
+}
+
+th {
+    background-color: pink;
+}
+
+#klik{
+    padding: 5px;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: #a7dbd8;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#tabel{
+    display: none;
+    padding-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2{
+    text-align: center;
+}
